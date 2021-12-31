@@ -7,7 +7,9 @@ exports[`할일 목록을 확인할 수 있다. 1`] = `
     <button
       type="button"
     >
-      완료
+      <span>
+        완료
+      </span>
     </button>
   </li>
   <li>
@@ -15,15 +17,19 @@ exports[`할일 목록을 확인할 수 있다. 1`] = `
     <button
       type="button"
     >
-      완료
+      <span>
+        완료
+      </span>
     </button>
   </li>
   <li>
-    도지코인 풀 매수
+    뭐라도 하기
     <button
       type="button"
     >
-      완료
+      <span>
+        완료
+      </span>
     </button>
   </li>
 </ol>

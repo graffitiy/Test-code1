@@ -6,7 +6,7 @@ test("목록에 할일이 없을 수 있다.", () => {
 
   const { container } = render(<List tasks={tasks} />);
 
-  expect(container).toHaveTextContent("할 일이 없습니다.");
+  expect(container).toHaveTextContent("할 일이 없어요!");
 });
 
 test("할일 목록을 확인할 수 있다.", () => {
@@ -21,13 +21,13 @@ test("할일 목록을 확인할 수 있다.", () => {
     },
     {
       id: 3,
-      title: "도지코인 풀 매수",
+      title: "뭐라도 하기",
     },
   ];
 
   const { container } = render(<List tasks={tasks} />);
 
-  expect(container).not.toHaveTextContent("할 일이 없습니다.");
+  expect(container).not.toHaveTextContent("할 일이 없어요!");
   tasks.forEach((task) => {
     expect(container).toHaveTextContent(task.title);
   });
