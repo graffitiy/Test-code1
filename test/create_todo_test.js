@@ -11,7 +11,7 @@ Scenario(
     I.click("추가");
 
     I.see("아무것도 하지 않기");
-  }
+  },
 );
 
 Scenario(
@@ -28,5 +28,5 @@ Scenario(
     const value = await I.grabValueFrom("input");
 
     assert.equal("", value);
-  }
+  },
 );
